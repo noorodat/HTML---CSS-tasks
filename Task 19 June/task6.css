@@ -1,0 +1,35 @@
+body {
+    background-color: #ffffce;
+}
+
+article {
+    background-color: white;
+    border-color: black;
+    border-width: 2px;
+    width: 650px;
+    padding: 10px;
+}
+
+.art-1{
+    
+    border-style: solid;
+}
+
+.art-3 {
+    border-style: solid;
+    color: red;
+    border-color: red;
+    border-style: dashed;
+}
+
+.art-3 p {
+    border: 2px dashed red;
+}
+
+.ipsum {
+    background-color: rgba(255, 166, 0, 0.413);
+}
+
+.quis {
+    background-color: rgba(255, 255, 0, 0.612);
+}
