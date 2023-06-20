@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+
+
+    <style>
+
+        .container {
+            border: 2px black dashed;
+            width: fit-content;
+            margin: 100px auto;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .square {
+            background-color: red;
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+        }
+
+        .square.green {
+            background-color: green;
+        }
+
+        .container .p-relative {
+            position: relative;
+            right: -20px;
+            bottom: -20px;
+        }
+
+        .container .p-absolute {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            top: 10px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+    <div class="square">
+        One
+    </div>
+    <div class="square green">
+        Two
+    </div>
+    <div class="square">
+        Three
+    </div>
+    <div class="square">
+        Four
+    </div>
+</div>
+
+<div class="container">
+    <div class="square">
+        One
+    </div>
+    <div class="square green p-relative">
+        Two
+    </div>
+    <div class="square">
+        Three
+    </div>
+    <div class="square">
+        Four
+    </div>
+</div>
+
+<div class="container">
+    <div class="square">
+        One
+    </div>
+    <div class="square green p-absolute">
+        Two
+    </div>
+    <div class="square">
+        Three
+    </div>
+    <div class="square">
+        Four
+    </div>
+</div>
+
+
+
+
+</body>
+
+
+</html>
