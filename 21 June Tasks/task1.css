@@ -1,0 +1,51 @@
+.container {
+    background-color: #a96e00;
+    color: white;
+    padding: 10px;
+    display: flex;
+    font-size: 50px;
+    text-align: center;
+    height: 500px;
+    width: fit-content;
+}
+
+.container div {
+    padding: 20px;
+}
+
+.container .one {
+    background-color: green;
+}
+
+.container .two {
+    background-color: yellow;
+}
+
+.container .three {
+    background-color: purple;
+}
+
+.container .four {
+    background-color: gray;
+}
+
+.container .five {
+    background-color: blue;
+}
+
+.container .six {
+    background-color: orange;
+}
+
+.container .seven {
+    background-color: pink;
+}
+
+.container .eight {
+    background-color: red;
+}
+
+.container .nine {
+    background-color: rgb(139, 2, 2);
+}
+

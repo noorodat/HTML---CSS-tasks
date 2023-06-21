@@ -1,0 +1,43 @@
+.container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    gap: 10px 20px;
+}
+
+.container div {
+    height: 100px;
+}
+
+.container .grey {
+    background-color: grey;
+    height: 35px;
+    grid-column: 1/4;
+}
+.container .blue {
+    background-color: blue;
+    grid-column: 1/3;
+}
+.container .lightblue {
+    background-color: lightblue;
+}
+
+.container .yellow{
+    background-color: yellow;
+}
+
+.container .sec-blue {
+    grid-column: 2 / 4;
+}
+
+.container .oranges {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px 20px;
+}
+
+
+.container .orange {
+    background-color: orange;
+    width: 107.5px;
+    height: 100px;
+}
