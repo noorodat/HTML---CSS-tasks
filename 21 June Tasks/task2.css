@@ -33,11 +33,10 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px 20px;
+    grid-column: 1/4;
 }
 
 
 .container .orange {
     background-color: orange;
-    width: 107.5px;
-    height: 100px;
 }
