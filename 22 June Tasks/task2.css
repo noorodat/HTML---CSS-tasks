@@ -1,0 +1,94 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    grid-template-areas: "header header header header header header" "left left content content content right";
+    width: 650px;
+    margin: 200px auto;
+}
+
+
+.container .header {
+    background-color: #16d5ef;
+    grid-area: header;
+    padding: 40px;
+}
+
+.container .left-side {
+    background-color: #ff7e47;
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 8px;
+}
+
+.container .left-side .left-element {
+    background-color: white;
+    padding: 15px;
+}
+
+.container .content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .content .content-element {
+    background-color: #dfdfdf;
+    padding: 30px;
+}
+
+.container .right-side {
+    background-color: #2cda72;
+    grid-area: right;
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+    }
+
+    .container .left-side {
+        flex-direction: row;
+        flex: 1;
+        padding: 0;
+        background-color: transparent;
+        gap: 0;
+    }
+
+    .container .left-side .left-element {
+        border: #ff7e47 7px solid;
+        flex-basis: 25%;
+    }
+
+    .container .right-side {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .content .content-element {
+        padding: 15px;
+    }
+
+    .container .right-side {
+        padding: 40px;
+    }
+}
+
+
+
+
+
+
