@@ -1,0 +1,54 @@
+body {
+    position: relative;
+}
+
+.square {
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation-name: moving-square;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 7s;
+    left: 400px;
+    top: 0;
+}
+
+@keyframes moving-square {
+    0% {
+        background-color: green;
+        left: 400px;
+        top: 0;
+    }
+    15% {
+        left: 800px;
+        top: 0;
+        background-image: linear-gradient(black,yellow);
+    }
+    30% {
+        top: 500px;
+        left: 800px;
+        background-image: linear-gradient(red,blue);
+    }
+
+    40% {
+        background-image: linear-gradient(yellow,blue);
+    }
+
+    45% {
+        left: 0;
+        top: 500px;
+        background-image: linear-gradient(black,gold);
+    }
+    60% {
+        left: 0;
+        top: 0;
+        background-image: linear-gradient(red,green);
+    }
+    100% {
+        left: 400px;
+        top: 0;
+        background-image: linear-gradient(purple,black);
+    }
+}
